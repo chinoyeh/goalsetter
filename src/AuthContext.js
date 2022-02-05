@@ -7,7 +7,14 @@ export function useAuth(){
     return useContext(AuthContext)
 }
 export function AuthProvider ({children}){
+    const [currentUser, setCurrentUser] = useState ()
     const [loading, setLoading] = useState(true)
+    
+    function Signup (username, email, password){
+        createUserWithEmailAndPassword (auth, email,password).then((currentUser)=>{
+            username = currentUser.username
+        })
+    }
 
     const value ={
         currentUser,
