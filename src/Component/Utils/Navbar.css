@@ -1,0 +1,25 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+.Logo img {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+.navlinks ul {
+  list-style: none;
+  display: flex;
+  margin: 5px;
+}
+.navlinks li {
+  margin: auto 8px;
+  font-weight: bold;
+}
+.navlinks button {
+  background-color: white;
+  border-style: none;
+  font-size: 16px;
+  font-weight: bold;
+}
